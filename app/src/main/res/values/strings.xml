@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StockPal</string>
+    <string name="usernameFill">username</string>
+    <string name="passwordFill">Password</string>
+    <string name="password">Password (6 or more alphanumeric characters)</string>
+
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="nameFirst">First Name:</string>
+    <string name="nameLast">Last Name:</string>
+    <string name="email">Email:</string>
+
+    <string name="passwordConfirm">Confirm Password:</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="create_account">Create Account</string>
+</resources>
