@@ -12,15 +12,15 @@ public class SignupPage extends AppCompatActivity {
 
     DatabaseHelper mDatabaseHelper;
     private Button btnAdd, btnViewData, btnDelete;
-    private EditText editText, editText2;
+    private EditText editTextEmail, editTextPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
 
-        editText = (EditText) findViewById(R.id.nameFirstField);
-        editText2 = (EditText) findViewById(R.id.nameLastField);
+        editTextEmail = (EditText) findViewById(R.id.emailField);
+        editTextPassword = (EditText) findViewById(R.id.passwordField);
 
         btnAdd = (Button) findViewById(R.id.createAccount);
 
@@ -29,11 +29,10 @@ public class SignupPage extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                String newEntry = editText.getText().toString() + editText2.getText().toString();
-                if (editText.length() != 0) {
+                String newEntry = editTextEmail.getText().toString() + editTextPassword.getText().toString();
+                if (editTextEmail.length() != 0) {
                     AddData(newEntry);
-
-                    editText.setText("");
+                    editTextEmail.setText("");
                 }
                 else{
                     toastMessage("You must enter something into the field!");
