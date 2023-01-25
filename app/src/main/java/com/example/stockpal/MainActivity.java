@@ -78,9 +78,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(auth) {
-            toastMessage("Data Successfully Inserted!");
             toastMessage("Logging In");
-            Log.d(TAG, "Logging In");
+
         }
         else {
             toastMessage("Something went wrong!");
