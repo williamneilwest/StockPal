@@ -29,9 +29,10 @@ public class SignupPage extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                String newEntry = editText.getText().toString();
+                String newEntry = editText.getText().toString() + editText2.getText().toString();
                 if (editText.length() != 0) {
                     AddData(newEntry);
+
                     editText.setText("");
                 }
                 else{
