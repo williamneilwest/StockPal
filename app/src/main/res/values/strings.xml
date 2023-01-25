@@ -2,7 +2,7 @@
     <string name="app_name">StockPal</string>
     <string name="usernameFill">username</string>
     <string name="passwordFill">Password</string>
-    <string name="password">Password (6 or more alphanumeric characters)</string>
+    <string name="password">Password</string>
 
     <string name="signup">Signup</string>
     <string name="login">Login</string>
