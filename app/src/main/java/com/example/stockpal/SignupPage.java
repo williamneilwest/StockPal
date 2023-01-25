@@ -2,6 +2,7 @@ package com.example.stockpal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 public class SignupPage extends AppCompatActivity {
 
     DatabaseHelper mDatabaseHelper;
-    private Button btnAdd, btnViewData, btnDelete;
+    private Button btnAdd, btnToLogin;
     private EditText editTextEmail, editTextPassword;
 
     @Override
@@ -23,6 +24,7 @@ public class SignupPage extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.passwordField);
 
         btnAdd = (Button) findViewById(R.id.createAccount);
+        btnToLogin = (Button) findViewById(R.id.buttonLogin);
 
         mDatabaseHelper = new DatabaseHelper(this);
 
@@ -48,6 +50,12 @@ public class SignupPage extends AppCompatActivity {
         else {
             toastMessage("Something went wrong!");
         }
+
+    }
+
+    public void goToLoginPage(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
     }
 
